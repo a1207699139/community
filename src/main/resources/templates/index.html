@@ -3,8 +3,8 @@
 <head>
     <title>阿呆社区</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" th:href="@{css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{css/bootstrap-theme.min.css}">
     <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
@@ -39,6 +39,264 @@
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
+    <div class="container-fluid main">
+        <div class="row">
+            <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                <h3><span class="glyphicon glyphicon-list" aria-hidden="true"></span> 发现</h3>
+                <ul class="nav nav-tabs">
+                    <li role="presentation" class="active">
+                        <a href="/?sort=new">最新</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="/?sort=hot30">30天最热</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="/?sort=hot7">7天最热</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="/?sort=hot">最热</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="/?sort=no" class="red">消灭零回复</a>
+                    </li>
+                </ul>
+
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-rounded"
+                                 src="https://avatars2.githubusercontent.com/u/60471023?v=4">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <a href="/question/1256">ceshi</a>
+                        </h4>
+                        <span class="text-desc"><span>0</span> 个回复 • <span>5</span> 次浏览 • <span>2020-12-13 21:49</span></span>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-rounded"
+                                 src="https://avatars3.githubusercontent.com/u/60859576?v=4">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <a href="/question/1255">编辑失效</a>
+                        </h4>
+                        <span class="text-desc"><span>0</span> 个回复 • <span>41</span> 次浏览 • <span>2020-12-11 21:23</span></span>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-rounded"
+                                 src="https://avatars1.githubusercontent.com/u/71223464?v=4">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <a href="/question/1254">用GitHub登录出现的问题 这是什么原因呢 该怎么排查</a>
+                        </h4>
+                        <span class="text-desc"><span>0</span> 个回复 • <span>34</span> 次浏览 • <span>2020-12-11 17:41</span></span>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-rounded"
+                                 src="https://avatars0.githubusercontent.com/u/52730755?v=4">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <a href="/question/1253">我是测试</a>
+                        </h4>
+                        <span class="text-desc"><span>0</span> 个回复 • <span>16</span> 次浏览 • <span>2020-12-10 21:10</span></span>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-rounded"
+                                 src="https://avatars3.githubusercontent.com/u/32888760?v=4">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <a href="/question/1252">123312312</a>
+                        </h4>
+                        <span class="text-desc"><span>0</span> 个回复 • <span>27</span> 次浏览 • <span>2020-12-09 11:48</span></span>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-rounded"
+                                 src="https://avatars0.githubusercontent.com/u/35053688?v=4">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <a href="/question/1251">测试看看</a>
+                        </h4>
+                        <span class="text-desc"><span>0</span> 个回复 • <span>29</span> 次浏览 • <span>2020-12-08 17:37</span></span>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-rounded"
+                                 src="https://avatars0.githubusercontent.com/u/57120228?v=4">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <a href="/question/1250">测试对于自己的帖子可以删除</a>
+                        </h4>
+                        <span class="text-desc"><span>0</span> 个回复 • <span>41</span> 次浏览 • <span>2020-12-08 17:31</span></span>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-rounded"
+                                 src="https://avatars0.githubusercontent.com/u/57118784?v=4">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <a href="/question/1249">请各位大神帮忙指点一下，通过access_token获取user信息的时候无法获取</a>
+                        </h4>
+                        <span class="text-desc"><span>2</span> 个回复 • <span>66</span> 次浏览 • <span>2020-12-07 14:24</span></span>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-rounded"
+                                 src="https://avatars0.githubusercontent.com/u/45627203?v=4">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <a href="/question/1248">我就来试试</a>
+                        </h4>
+                        <span class="text-desc"><span>0</span> 个回复 • <span>27</span> 次浏览 • <span>2020-12-06 15:38</span></span>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-rounded"
+                                 src="https://avatars3.githubusercontent.com/u/47879928?v=4">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <a href="/question/1247">论坛第一季完结打卡—欢迎各位来访问</a>
+                        </h4>
+                        <span class="text-desc"><span>0</span> 个回复 • <span>56</span> 次浏览 • <span>2020-12-05 15:17</span></span>
+                    </div>
+                </div>
+                <nav aria-label="Page navigation">
+                    <ul class="pagination">
+
+
+
+                        <li class="active">
+                            <a href="/?page=1&amp;search=&amp;tag=&amp;sort=new">1</a>
+                        </li>
+
+                        <li>
+                            <a href="/?page=2&amp;search=&amp;tag=&amp;sort=new">2</a>
+                        </li>
+
+                        <li>
+                            <a href="/?page=3&amp;search=&amp;tag=&amp;sort=new">3</a>
+                        </li>
+
+                        <li>
+                            <a href="/?page=4&amp;search=&amp;tag=&amp;sort=new">4</a>
+                        </li>
+
+                        <li>
+                            <a href="/?page=2&amp;search=&amp;tag=&amp;sort=new"
+                               aria-label="Previous">
+                                <span aria-hidden="true">&gt;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/?page=126&amp;search=&amp;tag=&amp;sort=new"
+                               aria-label="Previous">
+                                <span aria-hidden="true">&gt;&gt;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                <div><div>
+                    <!--码问官方公众号-->
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 side">
+                        <h4>官方微信</h4>
+                        <img class="img-thumbnail question-wechat" src="/images/official-account.png">
+                    </div>
+                </div></div>
+                <!--相关问题-->
+                <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h4>热门标签</h4>
+                    <a href="/?page=1&amp;search=&amp;tag=java&amp;sort=new"
+                       class="community-tag">java</a><a href="/?page=1&amp;search=&amp;tag=javascript&amp;sort=new"
+                                                        class="community-tag">javascript</a><a href="/?page=1&amp;search=&amp;tag=spring&amp;sort=new"
+                                                                                               class="community-tag">spring</a><a href="/?page=1&amp;search=&amp;tag=html&amp;sort=new"
+                                                                                                                                  class="community-tag">html</a><a href="/?page=1&amp;search=&amp;tag=css&amp;sort=new"
+                                                                                                                                                                   class="community-tag">css</a><a href="/?page=1&amp;search=&amp;tag=php&amp;sort=new"
+                                                                                                                                                                                                   class="community-tag">php</a><a href="/?page=1&amp;search=&amp;tag=mysql&amp;sort=new"
+                                                                                                                                                                                                                                   class="community-tag">mysql</a><a href="/?page=1&amp;search=&amp;tag=html5&amp;sort=new"
+                                                                                                                                                                                                                                                                     class="community-tag">html5</a><a href="/?page=1&amp;search=&amp;tag=github&amp;sort=new"
+                                                                                                                                                                                                                                                                                                       class="community-tag">github</a><a href="/?page=1&amp;search=&amp;tag=linux&amp;sort=new"
+                                                                                                                                                                                                                                                                                                                                          class="community-tag">linux</a>
+                </div>
+                <div><div>
+                    <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 side">
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <!-- 侧边栏广告位 -->
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                             data-ad-client="ca-pub-9804684553882114"
+                             data-ad-slot="2615744269"
+                             data-ad-format="auto"
+                             data-full-width-responsive="true"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </div></div>
+            </div>
+        </div>
+    </div>
+    <div><div class="footer">
+        <div>Copyright © 2019 码问 · <a href="http://www.beian.miit.gov.cn" target="_blank">浙ICP备18020649号</a> · 服务器赞助: <a
+                href="https://urlify.cn/JBzAje" target="_blank">UCloud</a> · All Rights Reserved
+            Powered
+        </div>
+    </div></div>
+</body>
 </nav>
 </body>
 </html>
