@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.4//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chenqi.community.dao.UserDao">
+    <select id="findAllUser" resultType="User">
+        select * from t_user
+    </select>
+
+    <select id="findUserByUsername" resultType="User" parameterType="String">
+        select * from t_user where username=#{username}
+    </select>
+
+    <insert id="insertOneUser" parameterType="User" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+        insert into t_user(username,password,email,git_address,avatar,sign)
+        value (#{username},#{password},#{email},#{gitAddress},#{avatar},#{sign})
+    </insert>
+</mapper>
